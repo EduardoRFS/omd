@@ -1,10 +1,7 @@
 _build/
 *.data
 *.log
-*.native
 *.opt
-*.byte
-#*
 .#*
 *~
 *.cmi
@@ -13,6 +10,7 @@ _build/
 *.cmx
 *.cmxa
 *.o
-omd
 .DS_Store
 .depend
+.merlin
+*.install

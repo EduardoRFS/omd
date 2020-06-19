@@ -7,7 +7,7 @@
 
 val debug : bool
 (** Equals [true] if the environment variable DEBUG is set,
-    or if the environment variable OMD_DEBUG is set to a string 
+    or if the environment variable OMD_DEBUG is set to a string
     that is not ["false"]. *)
 
 val trackfix : bool
@@ -35,10 +35,10 @@ type 'a split = 'a list -> 'a split_action
 and 'a split_action =
   (** Don't split yet *)
   | Continue
-  
+
   (** Don't split yet but continue with those two lists instead of default *)
   | Continue_with of 'a list * 'a list
-  
+
   (** Do split with this split scheme *)
   | Split of 'a list * 'a list
 (** Type of a split action *)
@@ -68,7 +68,7 @@ val fsplit_rev :
 val fsplit :
   ?excl:('a list -> bool) ->
   f:'a split -> 'a list -> ('a list * 'a list) option
-(** [fsplit ?excl ~f l] returns [Some(List.rev x, y)] 
+(** [fsplit ?excl ~f l] returns [Some(List.rev x, y)]
     if [fsplit ?excl ~f l] returns [Some(x,y)], else it returns [None]. *)
 
 val id_of_string : < mangle : string -> string; .. > -> string -> string
