@@ -1,5 +1,5 @@
 (library
- (name Omd_main)
+ (name omd)
  (public_name omd)
  (libraries bigarray bytes))
 
