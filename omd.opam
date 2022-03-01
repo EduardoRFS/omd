@@ -9,6 +9,7 @@ bug-reports: "https://github.com/ulugbekna/omd/issues"
 depends: [
   "dune" {>= "2.5"}
   "bigarray"
+  "camlp-streams"
   "bytes"
 ]
 build: [

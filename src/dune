@@ -1,8 +1,9 @@
 (library
  (name omd)
  (public_name omd)
- (libraries bigarray bytes))
+ (libraries bigarray camlp-streams bytes))
 
 (env
-    (dev
-      (flags (:standard -warn-error -A))))
+ (dev
+  (flags
+   (:standard -warn-error -A))))
