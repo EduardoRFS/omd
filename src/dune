@@ -1,7 +1,7 @@
 (library
  (name omd)
  (public_name omd)
- (libraries bigarray camlp-streams bytes))
+ (libraries bigarray-compat camlp-streams bytes))
 
 (env
  (dev
